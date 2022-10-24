@@ -14,7 +14,7 @@ EOF
 yum install -y nginx
 
 systemctl start nginx
-systemctl enabled nginx
+systemctl enable nginx
 
 firewall-cmd --zone=public --add-port=80/tcp --permanent 
 firewall-cmd --reload
